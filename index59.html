@@ -5,17 +5,7 @@
  <title>JS-8.s1</title> 
  </head> 
  <body> 
-  <style> 
-  		a{ 
- 			color:#F08080; 
-  		} 
-        a:active { 
-             color: #FFA500; 
-         } 
-  	    a:focus{ 
-  		color:#9400D3; 
- 	    } 
-  	</style> 
+
     <script language="javascript"> 
   	 
  		function getProperty(){ 
@@ -25,8 +15,8 @@
  		var bgc =  window.getComputedStyle(document.body,null).getPropertyValue("background-color");	 
   		var fgc =  window.getComputedStyle(document.body,null).getPropertyValue("color"); 
   		var lc =  window.getComputedStyle(a, null).getPropertyValue("color");		 
-  		var al = window.getComputedStyle(a, ':active').getPropertyValue("color"); 
-  		var vlc = window.getComputedStyle(a, ':focus').getPropertyValue("color");	 
+  		var al = window.getComputedStyle(a, null).getPropertyValue("color"); 
+  		var vlc = window.getComputedStyle(a, null).getPropertyValue("color");	 
   		var url = document.location; 
   		var ref = document.referrer; 
   		var t = document.title; 
